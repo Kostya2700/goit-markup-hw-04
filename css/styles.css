@@ -14,6 +14,7 @@
   --bcteam: #f5f4fa;
   --backgroundteam: #f5f4fa;
   --color-line:#C4C4C4;
+  --color-icon:#AFB1B8;
   --border-team: rgba(0, 0, 0, 0.25);
   --border-project: #EEEEEE;
   --border-header: #ECECEC;
@@ -105,6 +106,10 @@ img{
   /* padding-top: 32px; */
   /* padding-bottom: 32px; */
 }
+.icon-contact{
+  fill: var(--grey-cl);
+  margin-right: 10px;
+}
 .contacts-mail {
   margin-right: 50px;
 
@@ -124,6 +129,11 @@ img{
 .link-mail:focus {
   color: var(--logo-cl);
 }
+.link-mail:hover .icon-contact,
+.link-mail:focus .icon-contact {
+  fill: var(--logo-cl);
+}
+
 
 .link-tel {
   font-family: var(--roboto-font);
@@ -138,6 +148,11 @@ img{
 .link-tel:hover,
 .link-tel:focus {
   color: var(--logo-cl);
+  
+}
+.link-tel:hover .icon-contact,
+.link-tel:focus .icon-contact{
+  fill: var(--logo-cl);
 }
 
 /* Особливості*/
@@ -182,6 +197,16 @@ img{
 }
 .specifics{
   padding-bottom: 0;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bcteam);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .list-specifics {
   display: flex;
@@ -282,7 +307,37 @@ img{
   font-size: 16px;
   line-height: 1.18;
   color: var(--grey-cl);
+  margin-bottom: 16px;
   /* padding-bottom: 30px; */
+}
+.svg-icon{
+fill:var(--color-icon);
+}
+.social-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:not(:last-child){
+ margin-right: 10px; 
+}
+.social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color:var(--white-cl);
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus{
+  background-color:var(--logo-cl);
+}
+.social-link:hover .svg-icon,
+.social-link:focus .svg-icon{
+
+  fill: var(--white-cl);
 }
 /* Підвал*/
 .webstudio-footer {
@@ -420,7 +475,8 @@ margin-bottom: 0;
 .list-team,
 .adress-list,
 .list-portfolio-btn,
-.project-list {
+.project-list,
+.social-list {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
