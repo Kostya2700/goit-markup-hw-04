@@ -175,6 +175,17 @@ img{
   margin-right: auto;
   /* padding-top: 200px; */
 }
+.bc-home {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bc/bc-home.svg);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .btn-home {
   display: block;
   font-family: inherit;
@@ -379,6 +390,9 @@ fill:var(--color-icon);
 }
 
 /* Підвал*/
+.join{
+  display: inline-block;
+}
 .webstudio-footer {
   color: var(--logo-cl);
   padding-bottom: 20px;
@@ -392,7 +406,8 @@ fill:var(--color-icon);
   padding-bottom: 60px;
 }
 .footer-adress{
-
+/* padding-left: 215px;
+padding-bottom: 60px; */
 }
 .adress-list{
   padding-top: 20px;
@@ -422,8 +437,50 @@ fill:var(--color-icon);
 .tel-footer:focus {
   color: var(--logo-cl);
 }
+.join{
+  width: 206px;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.title-join{
+  font-style: var(--roboto-font);
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  color: var(--white-cl);
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
 .item-footer{
   margin-bottom: 9px;
+}
+.join-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.join-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join-item:not(:last-child){
+  margin-right: 10px;
+}
+.join-link:hover,
+.join-link:focus{
+  background-color: var(--logo-cl);
+}
+.icon-join{
+  fill: var(--white-cl);
+}
+.new{
+  display: flex;
 }
 /*Портфоліо*/
 .section-portfolio{
@@ -516,7 +573,8 @@ margin-bottom: 0;
 .list-portfolio-btn,
 .project-list,
 .social-list,
-.item-client {
+.item-client,
+.join-list {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -529,4 +587,9 @@ margin-bottom: 0;
 }
 .card-thumb{
   /* outline: 1px solid red; */
+}
+.item-web:hover,
+.item-web:focus {
+cursor: pointer;
+border: 3px solid var(--border-team);
 }
