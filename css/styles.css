@@ -18,6 +18,7 @@
   --border-team: rgba(0, 0, 0, 0.25);
   --border-project: #EEEEEE;
   --border-header: #ECECEC;
+  --clientc: #AFB1B8;
   --card-prf: 30px;
 }
 body {
@@ -252,7 +253,7 @@ img{
 .title-work {
   text-align: center;
   margin-top: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
 }
 .list-work {
@@ -273,7 +274,7 @@ img{
   text-align: center;
   font-size: 36px;
   /* padding-top: 94px; */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .list-team {
   display: flex;
@@ -339,6 +340,44 @@ fill:var(--color-icon);
 
   fill: var(--white-cl);
 }
+/* Клієнти */
+.title-clients {
+  text-align: center;
+  font-size: 36px;
+  /* padding-top: 94px; */
+  margin-bottom: 50px;
+}
+.list-client{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-client{
+  fill: var(--clientc);
+}
+.item-client{
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clientc);
+  border-radius: 4px;
+}
+.item-client:not(:last-child){
+  
+  margin-right: 30px;
+}
+.item-client:hover,
+.item-client:focus {
+  border: 1px solid var(--logo-cl);
+  cursor: pointer;
+}
+.item-client:hover .icon-client,
+.item-client:focus .icon-client {
+  fill: var(--logo-cl);
+}
+
 /* Підвал*/
 .webstudio-footer {
   color: var(--logo-cl);
@@ -476,7 +515,8 @@ margin-bottom: 0;
 .adress-list,
 .list-portfolio-btn,
 .project-list,
-.social-list {
+.social-list,
+.item-client {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
