@@ -516,9 +516,11 @@ padding-bottom: 60px; */
   cursor: pointer;
   background: var(--btnbc);
   padding: 6px 22px;
+  box-shadow: 0px 4px 4px var(--border-team);
 }
 .item-btn {
   margin-right: 8px;
+  
 }
 /*Проекти*/
 .container > .project-list {
@@ -588,8 +590,8 @@ margin-bottom: 0;
 .card-thumb{
   /* outline: 1px solid red; */
 }
-.item-web:hover,
-.item-web:focus {
+.project:hover,
+.project:focus {
 cursor: pointer;
-border: 3px solid var(--border-team);
+box-shadow: 0 4px 4px var(--border-team);
 }
